@@ -170,7 +170,7 @@ function createStyle() {
   carousel.appendChild(style);
 }
 
-
+//#1 способ
 // function indicatorsHandler(e) {
 //  let target = e.target
 //   if(target.classList.contains('indicators__item')) {
@@ -178,10 +178,11 @@ function createStyle() {
 //   }
 
 // }
+
 function indicatorsHandler(e) {
   let target = e.target;
    if(target.classList.contains('indicators__item')) {
-      target.style.backgroundColor = 'red'; //if(target !== null)classList.remove('active')
+      target.style.backgroundColor = 'red'; 
      
     } 
     if(indColor !== null) {
@@ -205,4 +206,5 @@ function createCarousel(slidesCount) {
   createStyle();
   setListener()
 }
+
 createCarousel(5);
